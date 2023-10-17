@@ -1,0 +1,41 @@
+{
+  "name": "template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "check": "vue-tsc --noEmit",
+    "watch": "vue-tsc --noEmit --watch",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
+    "lint": "eslint '**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}' --fix",
+    "commit": "pnpm lint && git add . && npx cz"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.19"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.eslintrc.cjs
+*.config.ts
+*.config.js
+
+dist
+node_modules
+.typings
