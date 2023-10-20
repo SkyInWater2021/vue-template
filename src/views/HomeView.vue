@@ -1,8 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { traditionalDate } from '@/utils'
+
+console.log(traditionalDate.solar2lunar(2023, 10, 20))
+</script>
 
 <template>
   <div class="">
     <el-button>首页</el-button>
+    <h1>h1</h1>
+    <h2>h2</h2>
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
